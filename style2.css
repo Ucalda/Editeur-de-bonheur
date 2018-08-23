@@ -26,7 +26,7 @@ body {
       margin-top: 10px;
       width: 8%;
   }
-  
+
 
   a {
     cursor: pointer;
@@ -48,15 +48,15 @@ body {
    width: 100%;
    display: flex;
    justify-content: center;
-    
+
   }
-  
+
   /* PROPRIETES DE L'EDITEUR DE TEXTE */
   #editor {
     box-shadow: inset 1px 1px 2px #0F0;
     min-height: 200px;
     /* max-height: 400px; */
-   
+
     padding: 1em;
     margin-top: 105px;
     resize: vertical;
@@ -67,7 +67,7 @@ body {
     position: absolute;
     width: 60%;
   }
-  
+
   /* PROPRIETES DU CONTAINER DE LA TOOLBAR */
 #containerToolbar{
     display: flex;
@@ -87,11 +87,11 @@ body {
   .toolbar a {
       margin:10px;
   }
-  
+
   .toolbar a,
   .fore-wrapper,
   .back-wrapper {
-     
+
       align-items: center;
     border: 1px solid #0F0;
     background: rgb(7, 7, 7);
@@ -106,7 +106,7 @@ body {
     text-decoration: none;
     box-shadow: 0px 1px 0px #CCC;
   }
-  
+
   .toolbar a:hover,
   .fore-wrapper:hover,
   .back-wrapper:hover {
@@ -117,7 +117,7 @@ body {
     color: black;
   }
 
-  
+
   a[data-command='redo'],
   a[data-command='strikeThrough'],
   a[data-command='justifyFull'],
@@ -128,7 +128,7 @@ body {
     margin-right: 5px;
     border-radius: 0 3px 3px 0;
   }
-  
+
   a[data-command='undo'],
   .fore-wrapper,
   a[data-command='justifyLeft'],
@@ -138,7 +138,7 @@ body {
   a[data-command='subscript'] {
     border-radius: 3px 0 0 3px;
   }
-  
+
   a.palette-item {
     height: 1em;
     border-radius: 3px;
@@ -146,23 +146,23 @@ body {
     width: 1em;
     border: 1px solid #CCC;
   }
-  
+
   a.palette-item:hover {
     border: 1px solid #CCC;
     box-shadow: inset 1px 1px 2px black;
   }
-  
+
   .fore-palette,
   .back-palette {
     display: none;
   }
-  
+
   .fore-wrapper,
   .back-wrapper {
     display: inline-block;
     cursor: pointer;
   }
-  
+
   .fore-wrapper:hover .fore-palette,
   .back-wrapper:hover .back-palette {
     display: flex;
@@ -175,7 +175,7 @@ body {
     box-shadow: 0 0 5px #CCC;
     height: auto;
   }
-  
+
   .fore-palette a,
   .back-palette a {
     background: transparent;
@@ -235,7 +235,7 @@ body {
     text-shadow:-6px 0px 26px #0d0c0c;
     margin-left: 3px;
 
-    
+
 }
 .saveButton:hover {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d60000), color-stop(1, #fe1a00));
@@ -292,6 +292,7 @@ body {
 .EraseButton:active {
     position:relative;
     top:1px;
+  }
 
   footer {
       width: 100%;
