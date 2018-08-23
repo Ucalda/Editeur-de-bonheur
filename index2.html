@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="'vivify.min.css'">
+    <link rel="stylesheet" href="matrix.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="containerLogo">
+            <img class="logo" src="smiley/3.gif" alt="">
+        </div>
+
+        <!-- <h1 class="vivify driveInTop">Editeur WYSIWYG</h1> -->
+        <h2>Matrix Model</h2>
+        <h3 class="vivify unfold">'Morpheus : Toute chose commence par un choix.'</h3>
+
+        <div class="validation">
+                <button class="EraseButton">Erase</button>
+        <button class="saveButton">save</button>
+    </div>
+    </header>
+
+
+    <div class="page">
+
+        <!-- EDITION DE LA TOOLBAR -->
+        <div id="container">
+                
+            <div id="containerToolbar">
+                    
+                <div class="toolbar">
+                    <a href="#" data-command='undo'>
+                        <i class='fa fa-undo'></i>
+                    </a>
+                    <a href="#" data-command='redo'>
+                        <i class='fa fa-redo'></i>
+                    </a>
+
+                    <div class="fore-wrapper">
+                        <i class='fa fa-font' style='color:#0F0;'></i>
+                        <div class="fore-palette">
+                        </div>
+                    </div>
+                    <div class="back-wrapper">
+                        <i class='fa fa-font' style='background:#C96;'></i>
+                        <div class="back-palette">
+                        </div>
+                    </div>
+                    <a href="#" data-command='bold'>
+                        <i class='fa fa-bold'></i>
+                    </a>
+                    <a href="#" data-command='italic'>
+                        <i class='fa fa-italic'></i>
+                    </a>
+                    <a href="#" data-command='underline'>
+                        <i class='fa fa-underline'></i>
+                    </a>
+                    <a href="#" data-command='strikeThrough'>
+                        <i class='fa fa-strikethrough'></i>
+                    </a>
+                    <a href="#" data-command='justifyLeft'>
+                        <i class='fa fa-align-left'></i>
+                    </a>
+                    <a href="#" data-command='justifyCenter'>
+                        <i class='fa fa-align-center'></i>
+                    </a>
+                    <a href="#" data-command='justifyRight'>
+                        <i class='fa fa-align-right'></i>
+                    </a>
+                    <a href="#" data-command='justifyFull'>
+                        <i class='fa fa-align-justify'></i>
+                    </a>
+                    <a href="#" data-command='indent'>
+                        <i class='fa fa-indent'></i>
+                    </a>
+                    <a href="#" data-command='outdent'>
+                        <i class='fa fa-outdent'></i>
+                    </a>
+                    <a href="#" data-command='insertUnorderedList'>
+                        <i class='fa fa-list-ul'></i>
+                    </a>
+                    <a href="#" data-command='insertOrderedList'>
+                        <i class='fa fa-list-ol'></i>
+                    </a>
+                    <a href="#" data-command='h1'>H1</a>
+                    <a href="#" data-command='h2'>H2</a>
+                    <a href="#" data-command='createlink'>
+                        <i class='fa fa-link'></i>
+                    </a>
+                    <a href="#" data-command='unlink'>
+                        <i class='fa fa-unlink'></i>
+                    </a>
+
+                    <a href="#" data-command='insertImage'>
+                            <i class="far fa-smile"></i>
+                    </a>
+                   
+
+                    <a href="#" data-command='insertimage'>
+                        <i class='fa fa-image'></i>
+                    </a>
+                    <a href="#" data-command='p'>P</a>
+                    <a href="#" data-command='subscript'>
+                        <i class='fa fa-subscript'></i>
+                    </a>
+                    <a href="#" data-command='superscript'>
+                        <i class='fa fa-superscript'></i>
+                    </a>
+                   
+                    <div class="selectSmiley"></div>
+                    
+                </div>
+            
+                
+            </div>
+            <!-- FIN EDITION DE LA TOOLBAR -->
+
+            
+
+            <!-- DIV EDITION DU TEXTE -->
+            <div id="containerEditor">
+                    
+                <div id='editor' contenteditable='true'>
+                </div>
+                
+            </div>
+
+            
+        </div>
+        <!-- FIN DE LA DIV EDITION TEXTE-->
+
+        
+    </div>
+    <!-- FIN DE LA DIV PAGE-->
+
+    <!-- SCRIPT BACKGROUND ANIME MATRIX -->
+    <canvas id="c">
+        <script src="matrix.js"></script>
+    </canvas>
+    <!-- FIN DU SCRIPT BACKGROUND ANIME MATRIX -->
+
+    <footer class="footer">
+            <p>Exercice réalisé par Ugo et Pascal</p>
+        </footer>
+</body>
+<script src="editeur2.js"></script>
+
+</html>
+</body>
+
+</html>
